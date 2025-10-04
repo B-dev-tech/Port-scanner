@@ -1,0 +1,10 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "apscan"
+version = "0.2.0"
+description = "APScan — Advanced Port Scanner (B-dev)"
+requires-python = ">=3.8"
+dependencies = ["click", "rich", "dnspython", "requests"]
