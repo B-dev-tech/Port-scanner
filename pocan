@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+DIR="$(cd "$(dirname "$0")" && pwd)"
+PY="$DIR/advanced_port_scanner.py"
+if [ -x "$DIR/venv/bin/python" ]; then
+  "$DIR/venv/bin/python" "$PY" "$@"
+else
+  python3 "$PY" "$@"
+fi
